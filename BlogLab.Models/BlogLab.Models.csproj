@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Account\" />
+    <None Remove="Blog\" />
+    <None Remove="BlogComment\" />
+    <None Remove="Photo\" />
+    <None Remove="Settings\" />
+    <None Remove="Exception\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Account\" />
+    <Folder Include="Blog\" />
+    <Folder Include="BlogComment\" />
+    <Folder Include="Photo\" />
+    <Folder Include="Settings\" />
+    <Folder Include="Exception\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+</Project>
